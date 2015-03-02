@@ -1,0 +1,21 @@
+[
+   {
+      "execmode": 0,
+      "type": "APPLICATION",
+      "name": "UploadApplication",
+      "location": "/tmp/UploadApplication",
+      "command": "/tmp/UploadApplication/run.sh",
+      "keys": [
+         {
+            "type": "string",
+            "scriptkey": "dest",
+            "scriptdefaultvalue": "/tmp/myapp",
+            "description": "Destination application should be put, it should be the same with volume that ia mapped to Liberty \"dropins\"",
+            "locked": false,
+            "required": true
+         }
+      ],
+      "log": "/tmp/UploadApplication/log",
+      "ostype": "linux/unix"
+   }
+]
