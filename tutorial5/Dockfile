@@ -1,0 +1,2 @@
+FROM wasdev/websphere-liberty
+ADD daytrader20-ee5.ear /opt/ibm/wlp/usr/servers/defaultServer/dropins/
