@@ -1,0 +1,12 @@
+mysql :
+  image: orchardup/mysql:latest
+  ports:
+    - "3306:3306"
+  environment:
+    MYSQL_DATABASE: wordpress
+web :
+  image: fig_test/wordpress:3.8
+  ports:
+    - "8000:8000"
+  links:
+    - db:mysql
